@@ -1,0 +1,73 @@
+.main_text{
+    width: 800px;
+    text-align: left;
+    float: left;
+    color: white;
+}
+.table{
+    list-style-type: none;
+    width: 800px;
+    text-align: left;
+    float: left;
+    color: white;
+}
+.white_text{
+    text-align: left;
+    color: white;
+}
+.main_txt_back{
+    width: 1100px;
+    height: 100%;
+    background-color: #ad8c28;
+}
+.char_img{
+    width: 250px;
+    height: 500px;
+}
+.head{
+    width: 1100px;
+    height: 100%;
+    background-color: #e3d48f;
+}
+
+.menu_item_Main_tierlist {
+    color: #664906;
+}
+.menu_item_MainDps {
+    color: #664906;
+}
+.menu_item_SubDps {
+    color: #664906;
+}
+.menu_item_Shielders {
+    color: #664906;
+}
+.menu_item_Healers {
+    color: #664906;
+}
+.menu_item_Buffers {
+    color: #664906;
+}
+
+.menu_item_Main_tierlist:hover {
+    color: #5c5656;
+}
+.menu_item_MainDps:hover {
+    color: #ff0000;
+}
+.menu_item_SubDps:hover {
+    color: #ff5500;
+}
+.menu_item_Shielders:hover {
+    color: #001aff;
+}
+.menu_item_Healers:hover {
+    color: #26ff00;
+}
+.menu_item_Buffers:hover {
+    color: #eeff00;
+}
+
+.menu_item:active {
+    color: #c800ff;
+}
