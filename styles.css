@@ -1,28 +1,44 @@
+.main_bacground{
+		background-image: url('main_background.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+#fur_back{
+	background-image: url('Fontaine.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#Kazuha_back{
+	background-image: url('Inazuma.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .main_text{
+    text-indent: 25px;
     width: 800px;
-    text-align: left;
+    text-align: justify;
     float: left;
-    color: white;
+    color: rgb(47, 14, 14);
 }
 .table{
-    list-style-type: none;
-    width: 800px;
-    text-align: left;
+    width: 700px;
+    text-align: justify;
     float: left;
-    color: white;
+    color: rgb(47, 14, 14);
 }
 .white_text{
     text-align: left;
-    color: white;
+    color: rgb(47, 14, 14);
 }
 .main_txt_back{
     width: 1100px;
     height: 100%;
-    background-color: #ad8c28;
+    background-color: #bcab7a;
 }
 .char_img{
     width: 250px;
     height: 500px;
+	border-width: 5px;
 }
 .head{
     width: 1100px;
@@ -56,7 +72,7 @@
     color: #ff0000;
 }
 .menu_item_SubDps:hover {
-    color: #ff5500;
+    color: #fc7e00;
 }
 .menu_item_Shielders:hover {
     color: #001aff;
@@ -70,4 +86,91 @@
 
 .menu_item:active {
     color: #c800ff;
+}
+:root {
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(.1, .7, 0, 1);
+}
+.wrapper{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.items {
+	display: flex;
+	gap: .4rem;
+	perspective: calc(var(--index) * 35);
+
+}
+.item {
+	background-color: #222;
+	width: calc(var(--index) * 3);
+	height: calc(var(--index) * 12);
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+	transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+	will-change: transform, filter;
+	filter: grayscale() brightness(.5);
+}
+.item::before, .item::after {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 100%;
+	right: calc(var(--index) * -1);
+}
+.items .item:hover{
+    transform: translateZ(calc(var(--index) * 10));
+    filter: inherit;
+}
+.items .item:hover + * {
+	transform: translateZ(calc(var(--index) * 8.5)) rotateY(30deg);
+	filter: inherit;
+	z-index: 4;
+}
+.items .item:hover + * + * {
+	transform: translateZ(calc(var(--index) * 6.5)) rotateY(25deg);
+	filter: inherit;
+	z-index: 3;
+}
+.items .item:hover + * + * +* {
+	transform: translateZ(calc(var(--index) * 4.5)) rotateY(15deg);
+	filter: inherit;
+	z-index: 2;
+}
+.items .item:hover + * + * +* + * {
+	transform: translateZ(calc(var(--index) * 2.5)) rotateY(10deg);
+	filter: inherit;
+	z-index: 1;
+}
+.item:has( + :hover) {
+	transform: translateZ(calc(var(--index) * 8.5)) rotateY(-30deg);
+	filter: inherit;
+	z-index: 4;
+}
+.item:has( + * + :hover ) {
+	transform: translateZ(calc(var(--index) * 6.5)) rotateY(-25deg);
+	filter: inherit;
+	z-index: 3;
+}
+.item:has( + * + * + :hover ) {
+	transform: translateZ(calc(var(--index) * 4.5)) rotateY(-15deg);
+	filter: inherit;
+	z-index: 2;
+}
+.item:has( + * + * + * + :hover ) {
+	transform: translateZ(calc(var(--index) * 2.5)) rotateY(-10deg);
+	filter: inherit;
+	z-index: 1;
+}
+.item .item:active, .items .item:focus{
+    width: 50vw;
+    transform: translateZ(calc(var(--index) * 10));
+    filter: inherit;
+    z-index: 100;
+}
+.body{
+    background-color: #21a307;
 }

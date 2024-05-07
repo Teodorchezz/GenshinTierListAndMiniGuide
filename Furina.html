@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body id="fur_back">
         <div class="head"><h1><b>GenshinTierListAndMiniGuide</b></h1>
             <table cellspacing="5" cellpadding="5">
                 <tr>
@@ -20,9 +20,9 @@
                 </tr>
             </table>
             </div>
-        <div style="width: 1100px; height: 670px; background-color: #3f320b;">
-        <h2><b style="color: white;">Furina</b></h2>
-                <div class="main_text"><p>Furina de Fontaine is a playable Hydro character in <i><b>Genshin Impact</b></i> who can alternate between Pneuma and Ousia alignments. 
+        <div style="width: 1100px; height: 670px; background-color: #bcab7a;">
+        <h2 id="h2js"><b style="color: rgb(47, 14, 14);">Furina</b></h2>
+                <div class="main_text" ><p>Furina de Fontaine is a playable Hydro character in <i><b>Genshin Impact</b></i> who can alternate between Pneuma and Ousia alignments. 
                     Introduced as the flamboyant and overconfident Hydro Archon, Furina's theatrics are eventually revealed to be a public persona, 
                     which she later discards in favor of living a relatively humbler life as an actress and artistic consultant.</p>
                     <p>Furina is an off-field DPS and Support that utilizes her Skill to do impressive off-field damage and using her 
@@ -34,11 +34,14 @@
                          5-star units with all their constellations), she will eventually drain her team dry. A character with a powerful, 
                          fast, teamwide heal will be essential to keep the Furina engine going.</p>
                     </div>
-                    <div class="main_text">
+                    <div class="main_text" >
                         <p>Gameplay</p>
-                        <iframe width="500" height="300" src="https://www.youtube.com/embed/r6Zs1c87Vxc?si=NSPQUZpubiWkqPvm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe id="fur_vid" width="500" height="300" src="https://www.youtube.com/embed/r6Zs1c87Vxc?si=NSPQUZpubiWkqPvm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-                    <div><img class="char_img" src="Furina_Card.png"border="5"></div>
+                    <div style="text-align: center"><image id="fr_img" class="char_img" src="Furina_Card.png" border="5"></image>
+                    <button type="button" onclick="change_fur_img()">Change arkhe</button>
+                    </div>
                 </div>
+            <script src="mainjs.js"></script>
     </body>
 </html>
