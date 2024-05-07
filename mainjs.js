@@ -12,7 +12,7 @@ function change_fur_img() {
 
 var pashalko = 0;
 function pashalko_activate(){
-    document.getElementById("fur_vid").setAttribute("src", "https://www.youtube.com/embed/WlR0mFut-rw?si=4HCwm2y7ZTEw6IJs") ;
+    document.getElementById("fur_vid").setAttribute("src", "https://www.youtube.com/embed/WlR0mFut-rw?si=4HCwm2y7ZTEw6IJs?autoplay=1&mute=1") ;
 }
 function pashalko_reverse(){
     document.getElementById("fur_vid").setAttribute("src", "https://www.youtube.com/embed/r6Zs1c87Vxc?si=NSPQUZpubiWkqPvm") ;
